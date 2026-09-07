@@ -2,6 +2,8 @@
 
 A public, self-hostable RootRecord node for local operators and community deployments.
 
+![RootRecord banner](media/banner.jpg)
+
 ## Purpose
 
 The Node project is the MIT-licensed public distribution of the RootRecord core. It is designed for people who want to run a local node, inspect the system, contribute improvements, and connect approved public data sources.
@@ -27,6 +29,17 @@ public integration contracts, but it must not absorb RootMC production code.
 ## Status
 
 Foundation stage. Runtime modules, configuration examples, tests, and installation documentation will be added incrementally.
+
+## First Run
+
+Run `install.ps1` on Windows or `./install.sh` on Ubuntu/Debian. Both invoke
+`core/boot.py`, which creates missing runtime directories, checks the host, and
+installs Python or Node dependencies when their manifests change. Boot output
+is displayed in the terminal and retained under `.runtime/logs/`.
+
+Auto-push is disabled by default for downloaded nodes. RootRecord developers
+may opt in by running `scripts/register-auto-push.ps1`; it registers a local
+two-minute task that sets `ROOTRECORD_AUTO_PUSH=1` and runs the safe worker.
 
 ## Lore
 
