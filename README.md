@@ -11,6 +11,10 @@ This repository is intentionally separate from the private-by-policy Ops and Pro
 - **Node:** public, MIT-licensed, user-runnable core
 - **Ops:** local operator desk and transparency surface; no license
 - **Processor:** RootRecord's hosted operational runtime; no license
+- **RootMC:** all RootMC development; no license
+
+RootMC-specific work belongs in `RootRecord-RootMC`. The Node may document
+public integration contracts, but it must not absorb RootMC production code.
 
 ## Principles
 
